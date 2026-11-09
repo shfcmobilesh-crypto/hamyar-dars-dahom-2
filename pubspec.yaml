@@ -1,0 +1,64 @@
+name: hamyar_dars_dahom
+description: همیار درس دهم - A premium offline educational companion for Grade 10 Experimental Sciences students.
+publisher: shayan vahdi
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Local database - Hive for lightweight offline storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Audio player for study music
+  audioplayers: ^5.2.1
+
+  # Persian date support
+  jalaali: ^1.0.0
+
+  # Local authentication / secure storage
+  flutter_secure_storage: ^9.0.0
+
+  # File picker for importing local audio
+  file_picker: ^6.1.1
+
+  # Path provider for local file paths
+  path_provider: ^2.1.1
+
+  # Connectivity check (offline-first awareness)
+  connectivity_plus: ^5.0.2
+
+  # Icons
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/audio/
+
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
